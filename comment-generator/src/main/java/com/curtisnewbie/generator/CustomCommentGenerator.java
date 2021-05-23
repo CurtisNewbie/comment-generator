@@ -36,9 +36,9 @@ public class CustomCommentGenerator extends DefaultCommentGenerator {
             return Optional.empty();
         }
         StringBuilder sb = new StringBuilder();
-        sb.append("/**");
+        sb.append("/** ");
         sb.append(remarks);
-        sb.append("*/");
+        sb.append(" */");
         return Optional.of(sb.toString());
     }
 }
